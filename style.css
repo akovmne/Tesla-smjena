@@ -144,3 +144,42 @@ td {
 .hidden-row {
   display: none !important;
 }
+/* Dodatak na kraj fajla za nova dugmad i poravnanje */
+.header-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.btn-danger {
+  padding: 8px 16px;
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background 0.2s;
+}
+
+.btn-danger:hover {
+  background: #dc2626;
+}
+
+.btn-delete-row {
+  background: transparent;
+  color: #ef4444;
+  border: none;
+  font-size: 1.2rem;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+.btn-delete-row:hover {
+  transform: scale(1.2);
+}
