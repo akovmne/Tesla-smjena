@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Tesla Taxi - Raspored Smjena</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <div class="header-zone">
+    <h1>🚖 Tesla Taxi – Raspored Smjena</h1>
+    <div id="tomorrowDateDisplay" class="date-badge">Učitavanje datuma...</div>
+  </div>
+
+  <div class="card filter-card">
+    <div class="horizontal-filters">
+      <input id="filterVehicle" placeholder="🔎 Filtriraj po Vozilu (npr. T-01)" oninput="filterTable()">
+      <input id="filterDriver" placeholder="🔎 Filtriraj po Vozaču" oninput="filterTable()">
+      <input id="filterShift" placeholder="🔎 Filtriraj po Smjeni" oninput="filterTable()">
+      <button onclick="resetFilters()" class="btn-secondary">♻️ Reset</button>
+    </div>
+  </div>
+
+  <div class="card table-card">
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Vozilo Broj</th>
+            <th>Vozač</th>
+            <th>Smjena</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+          </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+
+<script src="./app.js"></script>
+</body>
+</html>
