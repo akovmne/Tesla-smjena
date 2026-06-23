@@ -12,7 +12,10 @@
 
   <div class="header-zone">
     <h1>🚖 Tesla Taxi – Raspored Smjena</h1>
-    <div id="tomorrowDateDisplay" class="date-badge">Učitavanje datuma...</div>
+    <div class="header-actions">
+      <div id="tomorrowDateDisplay" class="date-badge">Učitavanje datuma...</div>
+      <button onclick="clearEntireSchedule()" class="btn-danger">🗑️ Obriši cijeli raspored</button>
+    </div>
   </div>
 
   <div class="card filter-card">
@@ -29,13 +32,14 @@
       <table>
         <thead>
           <tr>
-            <th>Vozilo Broj</th>
-            <th>Vozač</th>
-            <th>Smjena</th>
+            <th onclick="sortTable(0)" style="cursor: pointer;">Vozilo Broj <span id="sortSort0">↕</span></th>
+            <th onclick="sortTable(1)" style="cursor: pointer;">Vozač <span id="sortSort1">↕</span></th>
+            <th onclick="sortTable(2)" style="cursor: pointer;">Smjena <span id="sortSort2">↕</span></th>
+            <th>Akcija</th>
           </tr>
         </thead>
         <tbody id="tableBody">
-          </tbody>
+        </tbody>
       </table>
     </div>
   </div>
