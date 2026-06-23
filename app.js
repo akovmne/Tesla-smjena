@@ -1,13 +1,14 @@
 // Tvoja Firebase konfiguracija (Koristimo tvoje tačne ključeve iz prethodnog projekta)
 const firebaseConfig = {
-  apiKey: "AIzaSyA_wcdHfOVXJkS4Sm6ihjhaeGyrRjH9r1w",
-  authDomain: "tesla-punjaci.firebaseapp.com",
-  databaseURL: "https://tesla-punjaci-default-rtdb.firebaseio.com",
-  projectId: "tesla-punjaci",
-  storageBucket: "tesla-punjaci.firebasestorage.app",
-  messagingSenderId: "140620994358",
-  appId: "1:140620994358:web:9bd2cbeaee436edea00597"
+  apiKey: "AIzaSyC9g2dM__ZHZiCjS6Qekq2YBle5SLxVM0k",
+  authDomain: "tesla-smjena.firebaseapp.com",
+  databaseURL: "https://tesla-smjena-default-rtdb.firebaseio.com",
+  projectId: "tesla-smjena",
+  storageBucket: "tesla-smjena.firebasestorage.app",
+  messagingSenderId: "648346386918",
+  appId: "1:648346386918:web:c38f9e6b376b16f918d627"
 };
+
 
 // Inicijalizacija Firebase-a pod novom granom "smjene"
 if (!firebase.apps.length) {
